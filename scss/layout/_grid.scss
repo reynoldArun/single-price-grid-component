@@ -1,84 +1,105 @@
 .grid {
-    margin: 72px auto;
+    height: 100vh;
+    width: 100vw;
+    background-color: $LightGray;
+    display: flex;
     
-    &__one {
-        height: 265px;
-        width: 310px;
-        background-color: #fff;
-        padding: 32px 22px;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
 
-        h1 {
-            font-size: 1.5rem;
-        }
+    &__container {
+        width: 19.375rem;
+        margin: 5rem auto auto;
 
-        h4 {
-            color: $BrightYellow;
-            margin: 22px 0px;
-        }
-
-        h5 {
-            line-height: 24px;
-            font-weight: map-get($font-weights, regular);
-            color: $GrayishBlue;
+        @include media-Queries(small) {
+            display: grid;
+            width: 39.5rem;
+            grid-template-columns: 1fr 1fr;
+            
         }
     }
-    &__two {
-        height: 230px;
-        background-color: $Cyan;
-        width: 310px;
-        padding: 32px 22px;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
 
-        h3 {
-            color: white;
+    &__one {
+        background-color: #fff;
+        height: 16.75rem;
+        border-top-right-radius: 0.625rem;
+        border-top-left-radius: 0.625rem;
+        @include flexHelper;
+
+        @include media-Queries(small) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            height: 13.4375rem;
+            padding-right: 4.8125rem;
+            padding-left: 2.375rem;
+        }
+        h1 {
+            font-size: 1.5rem;
+            color: $Cyan;
+        }
+        h4 {
+            color: $BrightYellow;
+            margin: 1.375rem 0rem;
+
+            @include media-Queries(small) {
+                font-size: 1.2rem;
+            }
+        }
+        h5 {
+            line-height: 1.5rem;
+            font-weight: map-get($font-weights, regular);
+            color: $GrayishBlue;
+
+            @include media-Queries(small) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &__two {
+        height: 14.375rem;
+        background-color: $Cyan;
+        @include flexHelper;
+
+        button {
+            cursor: pointer;
+            height: 3.125rem;
+            width: 16.25rem;
+            border-radius: 5px;
+            border: none;
+            background-color: $BrightYellow;
+            font-weight: map-get($font-weights, bold);
+            font-family: $font;
         }
 
         p {
-            color: white;
-
             span {
                 font-size: 2rem;
             }
         }
 
-        h5 {
-            color: white;
+        @include media-Queries(small) {
+            height: 16.25rem;
+            border-bottom-left-radius: 0.625rem;
+            padding-left: 2.375rem;
         }
-
-
-        button {
-            height: 50px;
-            width: 260px;
-            border-radius: 5px;
-            border: none;
-            background-color: $BrightYellow;
-            color: white;
-            font-weight: map-get($font-weights, bold);
-            font-family: $font;
-            cursor: pointer;
-        }
-
-
     }
+    // grid - 3
     &__three {
-        height: 230px;
-        background-color: $Cyan;
-        width: 310px;
-        padding: 32px 22px;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        color: white;
+        @extend .grid__two;
+        @include flexHelper;
+        opacity: 0.8;
+        border-bottom-right-radius: 0.625rem;
+        border-bottom-left-radius: 0.625rem;
         
         li {
             font-size: 0.9rem;
-            line-height: 18px;
+            line-height: 1.2rem;
         }
-        
+
+        @include media-Queries(small) {
+            height: 16.25rem;
+            border-bottom-right-radius: 0.625rem;
+            border-bottom-left-radius: 0;
+            padding-left: 2.375rem;
+        }
     }
 }

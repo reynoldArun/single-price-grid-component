@@ -1,0 +1,21 @@
+$breakpoints:(
+    // 640px
+    "small": "40rem",
+    // 1024px
+    "medium": "64rem", 
+);
+
+
+@mixin media-Queries($size) {
+    @media (min-width: map-get($breakpoints, $size)){
+        @content
+    }
+};
+
+@mixin flexHelper {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 2rem 1.375rem;
+    width: 100%;
+}
