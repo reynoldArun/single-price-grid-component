@@ -5,14 +5,14 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 ### Screenshot
 
-![](./images/mobile.jpg)
-![](./images/desktop.jpg)
+![](./images/mobile.png)
+![](./images/desktop.png)
 
 
 ### Links
 
 - Solution URL: [Repo](https://github.com/reynoldArun/qr-code-component-main)
-- Live Site URL: [live demo](https://your-live-site-url.com)
+- Live Site URL: [live demo](https://bespoke-entremet-9ea642.netlify.app/)
 
 
 ### Built with
