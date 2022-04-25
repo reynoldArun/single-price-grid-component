@@ -1,0 +1,84 @@
+.grid {
+    margin: 72px auto;
+    
+    &__one {
+        height: 265px;
+        width: 310px;
+        background-color: #fff;
+        padding: 32px 22px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            color: $BrightYellow;
+            margin: 22px 0px;
+        }
+
+        h5 {
+            line-height: 24px;
+            font-weight: map-get($font-weights, regular);
+            color: $GrayishBlue;
+        }
+    }
+    &__two {
+        height: 230px;
+        background-color: $Cyan;
+        width: 310px;
+        padding: 32px 22px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+
+        h3 {
+            color: white;
+        }
+
+        p {
+            color: white;
+
+            span {
+                font-size: 2rem;
+            }
+        }
+
+        h5 {
+            color: white;
+        }
+
+
+        button {
+            height: 50px;
+            width: 260px;
+            border-radius: 5px;
+            border: none;
+            background-color: $BrightYellow;
+            color: white;
+            font-weight: map-get($font-weights, bold);
+            font-family: $font;
+            cursor: pointer;
+        }
+
+
+    }
+    &__three {
+        height: 230px;
+        background-color: $Cyan;
+        width: 310px;
+        padding: 32px 22px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        color: white;
+        
+        li {
+            font-size: 0.9rem;
+            line-height: 18px;
+        }
+        
+    }
+}

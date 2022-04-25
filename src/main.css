@@ -8,4 +8,83 @@
 
 body {
   font-size: 16px;
+  height: 100vh;
+  display: flex;
+  background-color: hsl(204deg, 43%, 93%);
+  font-family: "Karla", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.grid {
+  margin: 72px auto;
+}
+.grid__one {
+  height: 265px;
+  width: 310px;
+  background-color: #fff;
+  padding: 32px 22px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.grid__one h1 {
+  font-size: 1.5rem;
+}
+.grid__one h4 {
+  color: hsl(71deg, 73%, 54%);
+  margin: 22px 0px;
+}
+.grid__one h5 {
+  line-height: 24px;
+  font-weight: 400;
+  color: hsl(218deg, 22%, 67%);
+}
+.grid__two {
+  height: 230px;
+  background-color: hsl(179deg, 62%, 43%);
+  width: 310px;
+  padding: 32px 22px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.grid__two h3 {
+  color: white;
+}
+.grid__two p {
+  color: white;
+}
+.grid__two p span {
+  font-size: 2rem;
+}
+.grid__two h5 {
+  color: white;
+}
+.grid__two button {
+  height: 50px;
+  width: 260px;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(71deg, 73%, 54%);
+  color: white;
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
+  cursor: pointer;
+}
+.grid__three {
+  height: 230px;
+  background-color: hsl(179deg, 62%, 43%);
+  width: 310px;
+  padding: 32px 22px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  color: white;
+}
+.grid__three li {
+  font-size: 0.9rem;
+  line-height: 18px;
 }/*# sourceMappingURL=main.css.map */
